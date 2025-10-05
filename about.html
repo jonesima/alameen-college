@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Al-Ameen College</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'al-yellow': '#FFD700',
+                        'al-blue': '#0057B8',
+                        'al-light-blue': '#E6F0FF',
+                        'al-dark-blue': '#003A75'
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelwindcss.com/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="font-sans antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="http://static.photos/education/120x120/42" alt="Al-Ameen College Logo" class="h-12 w-12 rounded-full mr-3">
+                    <div>
+                        <h1 class="text-xl font-bold text-al-blue">AL-AMEEN COLLEGE</h1>
+                        <p class="text-xs text-gray-600">Excellence in Education Since 1995</p>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-al-blue transition">Home</a>
+                    <a href="about.html" class="text-al-blue font-semibold hover:text-al-yellow transition">About</a>
+                    <a href="academics.html" class="text-gray-700 hover:text-al-blue transition">Academics</a>
+                    <a href="admissions.html" class="text-gray-700 hover:text-al-blue transition">Admissions</a>
+                    <a href="news.html" class="text-gray-700 hover:text-al-blue transition">News & Events</a>
+                    <a href="student-life.html" class="text-gray-700 hover:text-al-blue transition">Student Life</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-al-blue transition">Contact</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="portal-login.html" class="bg-al-blue text-white px-4 py-2 rounded-lg hover:bg-al-dark-blue transition">Portal Login</a>
+                    <button class="md:hidden" id="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-white border-t" id="mobile-menu">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-3">
+                <a href="index.html" class="text-gray-700">Home</a>
+                <a href="about.html" class="text-al-blue font-semibold">About</a>
+                <a href="academics.html" class="text-gray-700">Academics</a>
+                <a href="admissions.html" class="text-gray-700">Admissions</a>
+                <a href="news.html" class="text-gray-700">News & Events</a>
+                <a href="student-life.html" class="text-gray-700">Student Life</a>
+                <a href="contact.html" class="text-gray-700">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-al-blue py-16 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">About Al-Ameen College</h1>
+            <p class="text-xl max-w-3xl mx-auto">Discover our rich history, mission, and the values that guide us in providing exceptional education</p>
+        </div>
+    </section>
+
+    <!-- History -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-al-blue mb-6">Our History</h2>
+                    <p class="text-gray-700 mb-4">Established in 1995, Al-Ameen College has been a beacon of educational excellence for over 25 years. Founded with the vision to create a holistic learning environment that nurtures both academic excellence and character development.</p>
+                    <p class="text-gray-700 mb-4">What began as a small institution with just 50 students has now grown into a premier educational establishment with over 2000 students and 150 dedicated faculty members.</p>
+                    <p class="text-gray-700">Throughout our journey, we have consistently adapted to changing educational landscapes while maintaining our core values of integrity, excellence, and community service.</p>
+                </div>
+                <div>
+                    <img src="http://static.photos/education/600x400/10" alt="College History" class="rounded-xl shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-16 bg-al-light-blue">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="w-16 h-16 bg-al-yellow rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="target" class="text-al-blue text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-al-blue mb-4">Our Mission</h3>
+                    <p class="text-gray-700">To provide a transformative educational experience that equips students with knowledge, skills, and values to excel in their chosen fields and contribute positively to society. We are committed to fostering intellectual curiosity, ethical leadership, and global citizenship.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="w-16 h-16 bg-al-yellow rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="eye" class="text-al-blue text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-al-blue mb-4">Our Vision</h3>
+                    <p class="text-gray-700">To be recognized as a premier institution of learning that develops innovative thinkers and responsible leaders who will shape the future. We aspire to create an ecosystem where education transcends conventional boundaries and empowers individuals to reach their fullest potential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-al-blue mb-12">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-al-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="award" class="text-al-blue text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-al-blue mb-3">Excellence</h3>
+                    <p class="text-gray-600">We strive for the highest standards in all aspects of education, fostering a culture of continuous improvement and achievement.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-al-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="heart" class="text-al-blue text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-al-blue mb-3">Integrity</h3>
+                    <p class="text-gray-600">We uphold honesty, ethics, and moral principles in all our actions, building trust within our community and beyond.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-al-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="users" class="text-al-blue text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-al-blue mb-3">Community</h3>
+                    <p class="text-gray-600">We believe in collaborative learning, mutual respect, and service to society, creating a supportive environment for all.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-al-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="zap" class="text-al-blue text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-al-blue mb-3">Innovation</h3>
+                    <p class="text-gray-600">We embrace creativity and new ideas, encouraging curiosity and adaptability in a rapidly changing world.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-al-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="globe" class="text-al-blue text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-al-blue mb-3">Global Perspective</h3>
+                    <p class="text-gray-600">We prepare students to be citizens of the world, understanding diverse cultures and global challenges.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-al-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="book-open" class="text-al-blue text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-al-blue mb-3">Lifelong Learning</h3>
+                    <p class="text-gray-600">We instill a love for learning that extends beyond formal education, encouraging personal and professional growth throughout life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="py-16 bg-al-light-blue">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-al-blue mb-12">Our Leadership</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden text-center">
+                    <img src="http://static.photos/people/300x300/10" alt="Principal" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-al-blue">Dr. Ahmed Hassan</h3>
+                        <p class="text-al-yellow font-medium">Principal</p>
+                        <p class="text-gray-600 mt-2">Ph.D. in Educational Leadership, 20+ years experience</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden text-center">
+                    <img src="http://static.photos/people/300x300/11" alt="Vice Principal" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-al-blue">Ms. Fatima Khan</h3>
+                        <p class="text-al-yellow font-medium">Vice Principal</p>
+                        <p class="text-gray-600 mt-2">M.Ed. in Curriculum Development, 15 years experience</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden text-center">
+                    <img src="http://static.photos/people/300x300/12" alt="Academic Dean" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-al-blue">Dr. Sameer Rahman</h3>
+                        <p class="text-al-yellow font-medium">Academic Dean</p>
+                        <p class="text-gray-600 mt-2">Ph.D. in Mathematics, Published Researcher</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden text-center">
+                    <img src="http://static.photos/people/300x300/13" alt="Student Affairs" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-al-blue">Mrs. Aisha Malik</h3>
+                        <p class="text-al-yellow font-medium">Dean of Student Affairs</p>
+                        <p class="text-gray-600 mt-2">M.A. in Psychology, Student Counselor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accreditation -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-al-blue mb-12">Accreditations & Affiliations</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+                <img src="http://static.photos/education/200x100/1" alt="Accreditation 1" class="h-16 object-contain">
+                <img src="http://static.photos/education/200x100/2" alt="Accreditation 2" class="h-16 object-contain">
+                <img src="http://static.photos/education/200x100/3" alt="Accreditation 3" class="h-16 object-contain">
+                <img src="http://static.photos/education/200x100/4" alt="Accreditation 4" class="h-16 object-contain">
+            </div>
+            <p class="text-center text-gray-600 mt-8 max-w-3xl mx-auto">Al-Ameen College is accredited by leading educational bodies and maintains affiliations with prestigious universities and organizations to ensure our curriculum meets the highest standards of quality and relevance.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-al-dark-blue text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Al-Ameen College</h3>
+                    <p class="mb-4">Excellence in Education Since 1995</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-al-yellow transition"><i data-feather="facebook"></i></a>
+                        <a href="#" class="hover:text-al-yellow transition"><i data-feather="twitter"></i></a>
+                        <a href="#" class="hover:text-al-yellow transition"><i data-feather="instagram"></i></a>
+                        <a href="#" class="hover:text-al-yellow transition"><i data-feather="youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-al-yellow transition">About Us</a></li>
+                        <li><a href="academics.html" class="hover:text-al-yellow transition">Academics</a></li>
+                        <li><a href="admissions.html" class="hover:text-al-yellow transition">Admissions</a></li>
+                        <li><a href="news.html" class="hover:text-al-yellow transition">News & Events</a></li>
+                        <li><a href="contact.html" class="hover:text-al-yellow transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Student Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="portal-login.html" class="hover:text-al-yellow transition">Student Portal</a></li>
+                        <li><a href="portal-login.html" class="hover:text-al-yellow transition">Parent Portal</a></li>
+                        <li><a href="library.html" class="hover:text-al-yellow transition">Library</a></li>
+                        <li><极 href="careers.html" class="hover:text-al-yellow transition">Career Guidance</a></li>
+                        <li><a href="downloads.html" class="hover:text-al-yellow transition">Downloads</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semib极d mb-4">Contact Info</h3>
+                    <address class="not-italic">
+                        <p class="mb-2"><i data-feather="map-pin" class="inline mr-2"></i> 123 Education Street, Knowledge City</p>
+                        <p class="mb-2"><i data-feather="phone" class="inline mr-2"></i> +1 (234) 567-8900</极>
+                        <p class="mb-2"><i data-feather="mail" class="inline mr-2"></i> info@alameencollege.edu</p>
+                        <p><i data-feather="clock" class="inline mr-2"></i> Mon-Fri: 8:00 AM - 5:00 PM</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>© 2023 Al-Ameen College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
+</body>
+</html>

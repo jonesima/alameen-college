@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Panel - Al-Ameen College</title>
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'al-yellow': '#FFD700',
+            'al-blue': '#0057B8',
+            'al-light-blue': '#E6F0FF',
+            'al-dark-blue': '#003A75'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="font-sans antialiased bg-gray-100">
+  <!-- Header -->
+  <header class="bg-al-blue text-white py-4 px-6 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Admin Dashboard</h1>
+    <a href="index.html" class="bg-white text-al-blue px-4 py-2 rounded-lg font-semibold hover:bg-gray-200">Back to Site</a>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Manage News -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h2 class="text-lg font-bold text-al-blue mb-4 flex items-center"><i data-feather="file-text" class="mr-2"></i> Manage News</h2>
+        <form class="space-y-4">
+          <input type="text" placeholder="News Title" class="w-full border rounded-lg px-4 py-2">
+          <textarea placeholder="News Content" class="w-full border rounded-lg px-4 py-2 h-24"></textarea>
+          <input type="date" class="w-full border rounded-lg px-4 py-2">
+          <button class="bg-al-blue text-white px-4 py-2 rounded-lg hover:bg-al-dark-blue">Add News</button>
+        </form>
+      </div>
+
+      <!-- Manage Staff -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h2 class="text-lg font-bold text-al-blue mb-4 flex items-center"><i data-feather="users" class="mr-2"></i> Manage Staff</h2>
+        <form class="space-y-4">
+          <input type="text" placeholder="Full Name" class="w-full border rounded-lg px-4 py-2">
+          <input type="text" placeholder="Role/Position" class="w-full border rounded-lg px-4 py-2">
+          <input type="email" placeholder="Email" class="w-full border rounded-lg px-4 py-2">
+          <button class="bg-al-blue text-white px-4 py-2 rounded-lg hover:bg-al-dark-blue">Add Staff</button>
+        </form>
+      </div>
+
+      <!-- Manage Gallery -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h2 class="text-lg font-bold text-al-blue mb-4 flex items-center"><i data-feather="image" class="mr-2"></i> Manage Gallery</h2>
+        <form class="space-y-4">
+          <input type="file" class="w-full border rounded-lg px-4 py-2">
+          <input type="text" placeholder="Caption" class="w-full border rounded-lg px-4 py-2">
+          <button class="bg-al-blue text-white px-4 py-2 rounded-lg hover:bg-al-dark-blue">Upload Image</button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-al-dark-blue text-white py-6 text-center mt-10">
+    <p>© 2023 Al-Ameen College Admin Panel</p>
+  </footer>
+
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>

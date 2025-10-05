@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admissions - Al-Ameen College</title>
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'al-yellow': '#FFD700',
+            'al-blue': '#0057B8',
+            'al-light-blue': '#E6F0FF',
+            'al-dark-blue': '#003A75'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="font-sans antialiased">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <img src="http://static.photos/education/120x120/42" alt="Al-Ameen College Logo" class="h-12 w-12 rounded-full mr-3">
+          <div>
+            <h1 class="text-xl font-bold text-al-blue">AL-AMEEN COLLEGE</h1>
+            <p class="text-xs text-gray-600">Excellence in Education Since 1995</p>
+          </div>
+        </div>
+
+        <nav class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-al-blue transition">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-al-blue transition">About</a>
+          <a href="academics.html" class="text-gray-700 hover:text-al-blue transition">Academics</a>
+          <a href="admissions.html" class="text-al-blue font-semibold hover:text-al-yellow transition">Admissions</a>
+          <a href="news.html" class="text-gray-700 hover:text-al-blue transition">News & Events</a>
+          <a href="student-life.html" class="text-gray-700 hover:text-al-blue transition">Student Life</a>
+          <a href="contact.html" class="text-gray-700 hover:text-al-blue transition">Contact</a>
+        </nav>
+
+        <div class="flex items-center space-x-4">
+          <a href="portal-login.html" class="bg-al-blue text-white px-4 py-2 rounded-lg hover:bg-al-dark-blue transition">Portal Login</a>
+          <button class="md:hidden" id="mobile-menu-button">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden bg-white border-t" id="mobile-menu">
+      <div class="container mx-auto px-4 py-4 flex flex-col space-y-3">
+        <a href="index.html" class="text-gray-700">Home</a>
+        <a href="about.html" class="text-gray-700">About</a>
+        <a href="academics.html" class="text-gray-700">Academics</a>
+        <a href="admissions.html" class="text-al-blue font-semibold">Admissions</a>
+        <a href="news.html" class="text-gray-700">News & Events</a>
+        <a href="student-life.html" class="text-gray-700">Student Life</a>
+        <a href="contact.html" class="text-gray-700">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="bg-al-blue py-16 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Admissions</h1>
+      <p class="text-xl max-w-3xl mx-auto">Join Al-Ameen College and start your academic journey with excellence.</p>
+    </div>
+  </section>
+
+  <!-- Admissions Info -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow-md p-6">
+          <h3 class="text-xl font-semibold text-al-blue mb-2">How to Apply</h3>
+          <ul class="list-disc ml-6 text-gray-700 space-y-2">
+            <li>Complete the online application form</li>
+            <li>Provide previous school records</li>
+            <li>Attend entrance assessment & interview</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-6">
+          <h3 class="text-xl font-semibold text-al-blue mb-2">Fees & Scholarships</h3>
+          <p class="text-gray-700">We offer affordable tuition and scholarships for outstanding students.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-6">
+          <h3 class="text-xl font-semibold text-al-blue mb-2">Important Dates</h3>
+          <p class="text-gray-700">Check the calendar for admission deadlines and entrance exam schedules.</p>
+        </div>
+      </div>
+
+      <!-- Admission Form -->
+      <div class="mt-12 bg-al-light-blue p-8 rounded-xl shadow-md">
+        <h3 class="text-2xl font-bold text-al-blue mb-4">Online Application</h3>
+        <form id="admissionForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input required placeholder="Full name" class="p-3 rounded-lg border" name="fullname" />
+          <input required placeholder="Date of birth" type="date" class="p-3 rounded-lg border" name="dob" />
+          <input required placeholder="Parent / Guardian name" class="p-3 rounded-lg border" name="guardian" />
+          <input required placeholder="Contact phone" class="p-3 rounded-lg border" name="phone" />
+          <textarea placeholder="Previous school / notes" class="p-3 rounded-lg border md:col-span-2" name="notes"></textarea>
+          <div class="md:col-span-2 flex gap-4 justify-end">
+            <button type="submit" class="bg-al-blue text-white px-6 py-3 rounded-lg">Submit Application</button>
+            <button type="reset" class="bg-white border px-6 py-3 rounded-lg">Reset</button>
+          </div>
+        </form>
+        <p class="text-sm text-gray-600 mt-3">This form is a frontend demo — connect to Supabase to store applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-al-dark-blue text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Al-Ameen College</h3>
+          <p class="mb-4">Excellence in Education Since 1995</p>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-al-yellow transition"><i data-feather="facebook"></i></a>
+            <a href="#" class="hover:text-al-yellow transition"><i data-feather="twitter"></i></a>
+            <a href="#" class="hover:text-al-yellow transition"><i data-feather="instagram"></i></a>
+            <a href="#" class="hover:text-al-yellow transition"><i data-feather="youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="hover:text-al-yellow transition">About Us</a></li>
+            <li><a href="academics.html" class="hover:text-al-yellow transition">Academics</a></li>
+            <li><a href="admissions.html" class="hover:text-al-yellow transition">Admissions</a></li>
+            <li><a href="news.html" class="hover:text-al-yellow transition">News & Events</a></li>
+            <li><a href="contact.html" class="hover:text-al-yellow transition">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Student Resources</h3>
+          <ul class="space-y-2">
+            <li><a href="portal-login.html" class="hover:text-al-yellow transition">Student Portal</a></li>
+            <li><a href="portal-login.html" class="hover:text-al-yellow transition">Parent Portal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+          <address class="not-italic">
+            <p class="mb-2"><i data-feather="map-pin" class="inline mr-2"></i> 123 Education Street, Knowledge City</p>
+            <p class="mb-2"><i data-feather="phone" class="inline mr-2"></i> +1 (234) 567-8900</p>
+            <p class="mb-2"><i data-feather="mail" class="inline mr-2"></i> info@alameencollege.edu</p>
+            <p><i data-feather="clock" class="inline mr-2"></i> Mon-Fri: 8:00 AM - 5:00 PM</p>
+          </address>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+        <p>© 2023 Al-Ameen College. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+
+    // Demo form handler
+    document.getElementById('admissionForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Application submitted (demo). Connect to Supabase to store data.');
+    });
+
+    feather.replace();
+  </script>
+</body>
+</html>
